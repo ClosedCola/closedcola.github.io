@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<script>
+function nya(obj)
+{
+var w=obj.wd.value;
+var h= obj.hg.value ;
+if (w !=0) document.mypict.width=w ;
+if (h !=0) document.mypict.height=h ;
+document.mypict.border=obj.br.value ;
+document.mypict.alt=obj.al.value ;
+}
+</script>
+</HEAD>
+
+<BODY>
+<CENTER>
+<IMG src=1.jpg name=mypict>
+
+<FORM name="form1"> <br>
+ширина (width): <input type="text" name="wd" size=8><br>
+высота (height): <input type="text" name="hg" size=8><br>
+толщина рамки (border): <input type="text" name="br" size=8 value=0><br>
+альтернативный текст (alt): <input type="text" name="al" size=40> <P>
+
+<input type="button" value= "Просмотр" onclick="nya(form1)">
+<input type="reset" value="Отмениь">
+</FORM>
+
+</CENTER>
+</BODY>
+</HTML>
